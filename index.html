@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <script language="JavaScript" type="text/javascript">
+      // if you preload images they need to be loaded before they are required
+      // once in the cash they can be used as the original file name(&path) or as new Image.src ie SRC[1].src
+
+      ImgPath = "";
+      ImgPreloadAry = new Array(
+        "Mickey Mouse.jpg",
+        "Bugs Bunny.png",
+        "Jerry Mouse.png",
+        "Fred Flintstone.png"
+      );
+      SRCAry = new Array();
+
+      for (i = 0; i < ImgPreloadAry.length; i++) {
+        SRCAry[i] = new Image();
+        SRCAry[i].src = ImgPath + ImgPreloadAry[i];
+      }
+
+      function Cng(sel) {
+        document.getElementById("image").src =
+          ImgPath + sel.options[sel.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="color: red">Hello!!</h1>
+    <img id="image" src="Fred Flintstone.png" width="250px" />
+    <br />
+
+    <select name="Sel" size="1" onchange="Cng(this);">
+      <option value="Mickey Mouse.jpg">Mickey Mouse</option>
+      <option value="Bugs Bunny.png">Bugs Bunny</option>
+      <option value="Jerry Mouse.png">Jerry Mouse</option>
+      <option value="Fred Flintstone.png">Fred Flintstone</option>
+    </select>
+    <p>hacktomber fest 2k21</p>
+  </body>
+</html>
