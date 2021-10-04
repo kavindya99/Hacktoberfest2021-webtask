@@ -4,6 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+  
+  
+    <style>
+    body{
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+    }
+    .heading{
+      font-family: cursive;
+      font-size: 3rem;
+      color: rgb(226, 62, 62);
+    }
+   .container-fluid{
+     height: 275px;
+     width: auto;
+   }
+   .form-select{
+     width: 20%;
+     margin: 3% auto;
+     
+  margin: 1rem auto 0;
+  width: 20rem;
+  border-radius: 1.25rem;
+  border: 1px solid #dedfdf;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  transition: background 300ms ease;
+   }
+
+   @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.hh {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 40px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+
+ 
+  text-align: center;
+  text-transform: uppercase;
+ 
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+   
+    </style>
+  
+  
+  
+  
+  
+  </head>
+  <body>
+    <br><br>
+    <h1 class="heading" ><b> Hello!!</b></h1>
+    <br>
+    <img class="container-fluid" id="image" src="Fred Flintstone.png" width="250px" />
+
+
+    <select class="form-select form-select-md" name="Sel" size="1" onchange="Cng(this);">
+      <option value="Fred Flintstone.png">Fred Flintstone</option>
+      <option value="Mickey Mouse.jpg">Mickey Mouse</option>
+      <option value="Bugs Bunny.png">Bugs Bunny</option>
+      <option value="Jerry Mouse.png">Jerry Mouse</option>
+      
+    </select>
+
+    <br><br>
+    <h1 class="hh">hacktomber fest 2k21</h1>
+    <!-- <p>hacktomber fest 2k21</p> -->
+
+
     <script language="JavaScript" type="text/javascript">
       // if you preload images they need to be loaded before they are required
       // once in the cash they can be used as the original file name(&path) or as new Image.src ie SRC[1].src
@@ -27,18 +165,7 @@
           ImgPath + sel.options[sel.selectedIndex].value;
       }
     </script>
-  </head>
-  <body>
-    <h1 style="color: red">Hello!!</h1>
-    <img id="image" src="Fred Flintstone.png" width="250px" />
-    <br />
-
-    <select name="Sel" size="1" onchange="Cng(this);">
-      <option value="Mickey Mouse.jpg">Mickey Mouse</option>
-      <option value="Bugs Bunny.png">Bugs Bunny</option>
-      <option value="Jerry Mouse.png">Jerry Mouse</option>
-      <option value="Fred Flintstone.png">Fred Flintstone</option>
-    </select>
-    <p>hacktomber fest 2k21</p>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
